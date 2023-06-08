@@ -1,0 +1,635 @@
+@use "../globals" as *;
+@use "../parts/common" as *;
+
+#global-container {
+    scroll-padding-top: $navHeight;
+}
+
+#container {
+    background: $cWhite;
+    position: relative;
+    z-index: 10;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+#main-contnt {
+    position: relative;
+    z-index: 0;
+}
+
+main {
+    position: relative;
+    z-index: -1;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $navHeight;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+
+    &.triggered {
+        background: rgba(255,255,255,0.9);
+        box-shadow: 10px 0 25px -10px rgba(0,0,0,0.5);
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @extend .content-width;
+        & .logo {
+            font-size: 16px;
+            align-items: center;
+            justify-content: center;
+            @include mq(md) {
+                font-size: 38px;
+                justify-content: flex-start;
+            }
+            &__name, &__school {
+                @extend .textShadow;
+            }
+        }
+    }
+    &__nav {
+        @extend .flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        display: none;
+        @include mq(lg) {
+            display: block;
+        }
+    }
+
+    &__ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__li {
+        margin: 5px;
+
+        @include mq(md) {
+            margin-left: 15px;
+            margin-right: 0;
+        }
+
+        &>a {
+            color: $cBlue;
+            @extend .textShadow;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.hero {
+    @extend .pb-lg;
+}
+
+.concept_inner {
+    margin-top: $minusNavHeight - 60px;
+    padding-top: $navHeight + 60px;
+    @include mq(xl) {
+        padding-top: $navHeight;
+        margin-top: $minusNavHeight;
+    }
+}
+
+
+.message {
+    @extend .content-width;
+    @extend .mb-lg;
+    @extend .pb-lg;
+
+    &__inner {
+        position: relative;
+        z-index: 0;
+        @extend .flex;
+        justify-content: space-between;
+        background: $cBgGray;
+        padding: 15px;
+
+        @include mq(md) {
+            padding: 50px;
+        }
+        @include mq(xl) {
+            padding: 50px 150px;
+        }
+    }
+
+    &__img {
+        height: 300px;
+        @extend .mb-sm;
+
+        transition: box-shadow 0.5s ease 1.6s;
+
+        &.inview {
+            box-shadow: inset 0 0 30px gray;
+        }
+
+        @include mq(md) {
+            flex-basis: 47%;
+        }
+        @include mq(lg) {
+            height: 400px;
+        }
+        & > img {
+            position: relative;
+            z-index: -1;
+            opacity: 1;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__texts {
+        @extend .pb-sm;
+        @include mq(md) {
+            display: flex;
+            align-items: flex-end;
+            flex-basis: 47%;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        text-align: center;
+
+        @include mq(lg) {
+            display: block;
+            font-size: 28px;
+            margin-bottom: 45px;
+        }
+    }
+
+    &__sub {
+        font-size: 16px;
+    }
+
+    &__description {
+        @include mq(lg) {
+            margin-bottom:  40px;
+        }
+    }
+}
+@keyframes scaleX {
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.diving {
+    padding-top: $navHeight (+ 60px);
+    margin-top: $minusNavHeight (- 60px);
+    @include mq(xl) {
+        padding-top: $navHeight;
+        margin-top: $minusNavHeight;
+    }
+
+    @extend .content-width;
+    // @extend .mb-lg;
+    @extend .font-sm;
+    @extend .pb-lg;
+
+    &__inner {
+        @extend .flex;
+    }
+
+    &__title {
+        margin-top: 5px;
+        @extend .mb-sm;
+        @extend .font-sm;
+    }
+
+    &__item {
+        @include mq(md) {
+            flex-basis: 50%;
+        }
+        object-fit: cover;
+    }
+
+}
+
+.training {
+    padding-top: $navHeight (+ 60px);
+    margin-top: $minusNavHeight (- 60px);
+    @include mq(xl) {
+        padding-top: $navHeight;
+        margin-top: $minusNavHeight;
+    }
+
+    @extend .content-width;
+    @extend .pb-lg;
+
+    &__inner {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1070px;
+        background: $cBgGray;
+        padding: 15px;
+
+        @include mq(md) {
+            margin-bottom: 30px;
+        }
+
+        @include mq(xl) {
+            padding: 50px 150px;
+        }
+        & .main__title {
+            display: block;
+            font-size: 22px;
+            line-height: 32px;
+            height: 32px;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            background: lightblue;
+
+            @include mq(lg) {
+                font-size: 28px;
+                line-height: 40px;
+                height: 40px;
+                margin-bottom: 45px;
+            }
+            &__inner {
+                margin-bottom: 20px;
+            }
+        }
+        & .sub-title {
+            @extend .m_font_md;
+            font-size: 14px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            background: lightgreen;
+            margin-top: 15px;
+            @include mq(md) {
+                font-size: 20px;
+                height: 34px;
+                line-height: 34px;
+                margin-bottom: 45px;
+            }
+            &__inner {
+                margin-top: 20px;
+                width: 90%;
+                @extend .m_font_md;
+                @include mq(md) {
+                    font-size: 16px;
+                }
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                & .koumoku {
+
+                }
+                & .center {
+                    margin: 0 auto;
+                    @include mq(md) {
+                        margin-bottom: 15px;
+                    }
+                }
+                & .sub-koumoku {
+
+                }
+
+                @include mq(md) {
+                    width: 70%;
+                }
+            }
+        }
+        &-p {
+            @include mq(md) {
+                text-indent: 2em;
+            }
+        }
+        & .options {
+            width: 80%;
+            @extend.m_font_sm;
+            color: blue;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            @include mq(md) {
+                font-size: 17px;
+                width: 60%;
+            }
+        }
+    }
+}
+
+
+ #tours {
+     @extend .content-width;
+}
+
+.tour {
+    padding-top: $navHeight (+ 60px);
+    margin-top: $minusNavHeight (- 60px);
+    @include mq(xl) {
+        padding-top: $navHeight;
+        margin-top: $minusNavHeight;
+    }
+    @extend .pb-lg;
+
+    &__inner {
+        @extend .content-width;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1070px;
+        background: $cBgGray;
+        padding: 15px;
+
+        @include mq(md) {
+            padding: 50px;
+            margin-bottom: 30px;
+        }
+
+        @include mq(xl) {
+            padding: 50px 150px;
+        }
+
+        &__title {
+            display: block;
+            font-size: 22px;
+            line-height: 32px;
+            height: 32px;
+            text-align: center;
+            margin-bottom: 10px;
+            background: lightblue;
+
+            @include mq(lg) {
+                font-size: 28px;
+                line-height: 42px;
+                height: 42px;
+                margin-bottom: 25px;
+            }
+        }
+        &__p {
+            margin-bottom: 20px;
+            @include mq(md) {
+                text-indent: 2em;
+            }
+        }
+
+        &-list1, &-list2 {
+            width: 80%;
+            margin-bottom: 20px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            & .list-name {
+                @extend .m_font_md;
+                @include mq(md) {
+                    font-size: 16px;
+                }
+             }
+            & .list-price {
+                @extend .m_font_md;
+                @include mq(md) {
+                    font-size: 16px;
+                }
+            }
+        }
+        &-option {
+            width: 90%;
+            @extend .m_font_sm;
+            margin: 0 auto;
+            color: blue;
+            margin-bottom: 15px;
+            @include mq(md) {
+                font-size: 17px;
+                width: 60%;
+            }
+        }
+    }
+    &__taiken {
+        width: 80%;
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        & .taiken__title {
+
+        }
+        & .price__list {
+
+        }
+    }
+    & .tour__taiken-option {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    &__taiken-oneday {
+        margin-top: 20px;
+        width: 80%;
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        & .taiken__title {}
+
+        & .taiken-price {}
+    }
+    &__taiken-p {
+        @include mq(md) {
+            text-indent: 2em;
+        }
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+.main__office {
+    padding-top: $navHeight (+ 60px);
+    margin-top: $minusNavHeight (- 60px);
+
+    @include mq(xl) {
+        padding-top: $navHeight;
+        margin-top: $minusNavHeight;
+    }
+    @extend .content-width;  
+
+    &__inner {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1070px;
+        background: $cBgGray;
+        padding: 15px;
+
+        @include mq(md) {
+            padding: 50px;
+            margin-bottom: 30px;
+        }
+        &-p {
+            @include mq(md) {
+                text-indent: 2em;
+            }
+            margin-bottom: 15px;
+        }
+
+        @include mq(xl) {
+            padding: 50px 150px;
+        }
+
+        & .instructor {
+            text-align: center;
+            justify-content: center;
+            & .license {
+                &__title, & .instructors-status {
+                    display: block;
+                    font-size: 18px;
+                    line-height: 32px;
+                    height: 32px;
+                    margin-bottom: 10px;
+                    background: lightblue;
+                    @include mq(lg) {
+                        font-size: 23px;
+                        line-height: 40px;
+                        height: 40x;
+                        margin-bottom: 25px;
+                    }
+                }
+                & .issuing-member {
+                    width: 80%;
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                }
+                & .joining-group {
+                    width: 80%;
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                }
+                & .onetime-2get {
+                    width: 80%;
+                    margin: 0 auto;
+                    text-align: center;
+                    color: $cBlue;
+                    margin-bottom: 15px;
+                }
+                & .instructors-status {
+                    margin-bottom: 15px;
+                }
+            }
+            & .profile {
+                @include mq(md) {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                &__photo {
+                    max-width: 40%;
+                    @include mq(md) {
+                        margin-top: 30px;
+                        max-width: 20%;
+                        margin-left: 100px;
+                        margin-right: 70px;
+                    }
+                    vertical-align: bottom;
+                    margin: 0 auto;
+                    & .photo {
+                        background-color: #c57b4e69;
+                        border-radius: 50%;
+                        margin-bottom: 10px;
+                    }
+                    & .name {
+                        font-weight:900;
+                    }
+                    margin-bottom: 20px;
+                }
+                &__group {
+
+                    & .detail {
+                        max-width: 100%;
+                        @include mq(md) {
+                            margin-right: 70px;
+                        }
+                        & .instructors-status__title {
+                            @include mq(md) {
+                                margin-right: 50px;
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .address {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+
+            &_tellfax {}
+        }
+    }
+}
+
+.footer {
+    padding: 30px 0;
+    @extend .content-width;
+    text-align: center;
+}
+
+.logo {
+    margin-left: 10px;
+    display: flex;
+
+    &__img {
+        width: 1.8rem;
+        margin-right: 5px;
+        @include mq(md) {
+            width: 3.5rem;
+        }
+    }
+    &__name, &__school {
+        color: $cBlue;
+        @extend .textShadow;
+        @include mq(md) {
+            font-size: 30px;
+        }
+    }
+}
+.m-logo {
+    margin-left: 30px;
+    font-size: 20px;
+    width: 230px;
+    text-align: center;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        & .img {
+            width: 1.8rem;
+            margin-right: 5px;
+        }
+        & .name {
+            color: $cBlue;
+            @extend .textShadow;
+        }
+    }
+    &__base {
+        & .school {
+            color: $cBlue;
+            @extend .textShadow;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@use "../globals" as *;
+@use "../parts/common" as *;
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* トップへ戻るボタン */
+.pagetop {
+	position: fixed;
+	width: 32px;
+	height: 32px;
+	bottom: 5%;
+	right: 3%;
+	transition: all .3s;
+	@include mq(lg) {
+		width: 64px;
+		height: 64px;
+		bottom: 5%;
+		right: 2.5%;
+	}
+	opacity: 0; /* デフォルトでは表示を消します */
+	visibility: hidden; /* デフォルトでは表示を消します */
+	z-index: 100;
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		background-color: $cLightBlue;
+		border-radius: 50%;
+		text-align: center;
+		padding-top: 5px;
+		font-size: 9px;
+		@include mq(lg) {
+			font-size: 18px;
+		}
+		font-size: bold;
+		line-height: 1.3;
+		color: #333;
+		text-decoration: none;
+	}
+	&__text {
+		padding-top: 25x;
+		position: relative;
+		&::before {
+			content: "〈";
+			display: inline-block;
+			position: absolute;
+			top: -13px;
+			@include mq(lg) {
+				top: -26px;
+			}
+			left: 50%;
+			transform: translateX(-50%) rotate(90deg);
+		}
+		&::after {
+			content: "〈";
+			display: inline-block;
+			position: absolute;
+			top: -10px;
+			@include mq(lg) {
+					top: -22px;
+				}
+			left: 50%;
+			transform: translateX(-50%) rotate(90deg);
+		}
+	}
+}
+
+/* TOPボタン出現後のスタイル */
+.pagetop.fadeIn {
+	opacity: 1;
+	visibility: inherit;
+}

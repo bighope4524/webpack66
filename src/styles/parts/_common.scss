@@ -1,0 +1,121 @@
+@use "../globals" as *;
+
+body {
+  font-family: 'Kameron','Noto Sans JP', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mb-lr {
+  margin-bottom: 25px !important;
+}
+
+.mb-lg {
+  margin-bottom: 5px !important;
+
+  @include mq(lg) {
+    margin-bottom: 10px !important;
+  }
+}
+
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+
+.pb-lg {
+  padding-bottom: 30px !important;
+  // padding-bottom: 80px !important;
+
+  @include mq(lg) {
+    // padding-bottom: 150px !important;
+    padding-bottom: 50px !important;
+  }
+}
+
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+
+  @include mq(md) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.blue {
+  color: blue;
+}
+.shadow {
+  text-shadow: lightblue 3px 2px 3px;
+}
+
+#main-content {
+  position: relative;
+  z-index: 0;
+}
+
+// font
+.font-sm {
+  font-size: 12px;
+
+  @include mq(lg) {
+    font-size: 14px;
+  }
+}
+.font-md {
+  font-size: 17px;
+
+  @include mq(lg) {
+    font-size: 19px;
+  }
+}
+.font-lr {
+  font-size: 17px;
+
+  @include mq(lg) {
+    font-size: 23px;
+  }
+}
+.font-lg {
+  font-size: 25px;
+
+  @include mq(lg) {
+    font-size: 36px;
+  }
+}
+.m_font_md {
+  font-size: 14px;
+}
+.m_font_sm {
+  font-size: 13px;
+}
+.main-title {
+  @extend .font-lr;
+  // @extend .font-lg;
+  font-weight: 600;
+  margin-bottom: 0;
+  display: block;
+}
+
+.sub-title {
+  @extend .font-sm;
+  @extend .mb-sm;
+  color: $cSubTitle;
+}
+
+.textShadow {
+  text-shadow: $cBlack 1px 1px 2px, teal 0 0 10px;
+}
