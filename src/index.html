@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>シープル | ダイビングスクール</title>
     <meta name="description" content="神奈川県川崎市多摩区にある南武線、中野島より徒歩２分という駅近のダイビングスクール">
-    <link rel="icon" href="images/logo.svg">
+    <link rel="icon" href="<%= require('./images/logo.svg') %>">
         <!-- 内部SEO/OGP -->
     <script src="scripts/vendors/pace.js"></script>
     <link rel="stylesheet" href="styles/loader.css">
@@ -20,585 +20,597 @@
     <link rel="stylesheet" href="styles/vendors/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <script src="scripts/vendors/gsap.min.js" defer></script>
-    <script src="scripts/vendors/swiper-bundle.min.js" defer></script>
-    <script src="scripts/libs/hero-slider.js" defer></script>
-    <script src="scripts/vendors/scroll-polyfill.js" defer></script>
-    <script src="scripts/libs/scroll.js" defer></script>
-    <script src="scripts/libs/mobile-menu.js" defer></script>
-    <script src="scripts/libs/text-animation.js" defer></script>
-    <script src="scripts/main.js" defer></script>
+    
 </head>
 
-<body>
-    <div id="global-container">
-        <div class="pagetop">
-            <a href="#" class="pagetop__link">
-                <span class="pagetop__text">TOP</span>
-            </a>
-        </div>
-        <div id="container">
-            <div class="mobile-menu__cover"></div>
-            <div class="nav-trigger"></div>
-            <header class="header">
-                <div class="header__inner appear up">
-                    <div class="logo item">
-                        <img class="logo__img" src="images/seaple_logo.png">
-                        <span class="logo__name">シープル</span>
-                        <span class="logo__school">&nbsp;ダイビング&nbsp;スクール</span>
+    <body>
+        <div id="global-container">
+            <div class="pagetop">
+                <a href="#" class="pagetop__link">
+                    <span class="pagetop__text">TOP</span>
+                </a>
+            </div>
+            <div id="container">
+                <div class="mobile-menu__cover"></div>
+                <div class="nav-trigger"></div>
+                <header class="header">
+                    <div class="header__inner appear up">
+                        <div class="logo item">
+                            <img class="logo__img" src="<%= require('./images/seaple_logo.png') %>">
+                            <span class="logo__name">シープル</span>
+                            <span class="logo__school">&nbsp;ダイビング&nbsp;スクール</span>
+                        </div>
+                        <nav class="header__nav">
+                            <ul class="header__ul">
+                                <li class="header__li item"><a href="#concept">コンセプト</a></li>
+                                <li class="header__li item"><a href="#taiken">体験ダイビング</a></li>
+                                <li class="header__li item"><a href="#kousyu">スクール</a></li>
+                                <li class="header__li item"><a href="#tours">ツアーへお誘い</a></li>
+                                <li class="header__li item"><a href="#office">オフィス</a></li>
+                            </ul>
+                        </nav>
+                        <button class="mobile-menu__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
-                    <nav class="header__nav">
-                        <ul class="header__ul">
-                            <li class="header__li item"><a href="#concept">コンセプト</a></li>
-                            <li class="header__li item"><a href="#taiken">体験ダイビング</a></li>
-                            <li class="header__li item"><a href="#kousyu">スクール</a></li>
-                            <li class="header__li item"><a href="#tours">ツアーへお誘い</a></li>
-                            <li class="header__li item"><a href="#office">オフィス</a></li>
-                        </ul>
-                    </nav>
-                    <button class="mobile-menu__btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </header>
-            <div id="content">
-                <div class="hero">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="hero__title">さあ、潜ろう！</div>
-                                <img src="images/main-1.jpg" alt="" />
+                </header>
+                <div id="content">
+                    <div class="hero">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="hero__title">さあ、潜ろう！</div>
+                                    <img src="<%= require('./images/main-1.jpg') %>" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="hero__title">６０歳からの夢</div>
+                                    <img src="<%= require('./images/main-2.jpg') %>" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="hero__title">竜宮城へご案内</div>
+                                    <img src="<%= require('./images/main-3.jpg') %>" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <!-- <div class="hero__title">Experience</div> -->
+                                    <img src="<%= require('./images/main-4.jpg') %>" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <!-- <div class="hero__title">Fantastic</div> -->
+                                    <img src="<%= require('./images/main-6.jpg') %>" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <!-- <div class="hero__title">Enjoy Rich</div> -->
+                                    <img src="<%= require('./images/main-5.jpg') %>" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <!-- <div class="hero__title">Experience</div> -->
+                                    <img src="<%= require('./images/main-7.jpg') %>" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <!-- <div class="hero__title">Experience</div> -->
+                                    <img src="<%= require('./images/main-8.jpg') %>" alt="" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <!-- <div class="hero__title">Experience</div> -->
+                                    <img src="<%= require('./images/main-9.jpg') %>" alt="" />
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="hero__title">６０歳からの夢</div>
-                                <img src="images/main-2.jpg" alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="hero__title">竜宮城へご案内</div>
-                                <img src="images/main-3.jpg" alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- <div class="hero__title">Experience</div> -->
-                                <img src="images/main-4.jpg" alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- <div class="hero__title">Fantastic</div> -->
-                                <img src="images/main-6.jpg" alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- <div class="hero__title">Enjoy Rich</div> -->
-                                <img src="images/main-5.jpg" alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- <div class="hero__title">Experience</div> -->
-                                <img src="images/main-7.jpg" alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- <div class="hero__title">Experience</div> -->
-                                <img src="images/main-8.jpg" alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <!-- <div class="hero__title">Experience</div> -->
-                                <img src="images/main-9.jpg" alt="" />
+                            <div class="hero__footer">
+                                <img class="hero__downarrow" src="<%= require('./images/arrow.svg') %>">
+                                <span class="hero__scrolltext">scroll</span>./
                             </div>
                         </div>
-                        <div class="hero__footer">
-                            <img class="hero__downarrow" src="images/arrow.svg">
-                            <span class="hero__scrolltext">scroll</span>
-                        </div>
                     </div>
-                </div>
-                <div id="main-content">
-                    <main>
-                        <section id="concept" class="message">
-                            <div class="concept_inner">
-                                <div class="message__inner">
-                                    <div class="message__img cover-slide">
-                                        <img class="img-zoom" src="images/pool_side.jpg">
-                                    </div>
-                                    <div class="message__texts appear left">
-                                        <div class="message__texts-inner">
-                                            <div class="message__title main-title item">
-                                                <span class="blue shadow">１０歳からの大冒険<br>６０歳からの夢</span>
-                                            </div>
-                                            <div class="message__sub sub-title item">
-                                                実現しましょう。
-                                            </div>
-                                            <div class="message__description item">
-                                                <p>生命の源であり、人類の母なる海。</p>
-                                                <p>この偉大なる大自然の海に､もっと親しみを持って身体と心で実感し、生命の素晴らしさを改めて感じてみませんか！</p>
-                                                <p>老若男女とわず、アドベンチャーとリラクゼーションの新世界に飛びたちましょう。</p>
-                                            </div>
+                    <div id="main-content">
+                        <main>
+                            <section id="concept" class="message">
+                                <div class="concept_inner">
+                                    <div class="message__inner">
+                                        <div class="message__img cover-slide">
+                                            <img class="img-zoom" src="<%= require('./images/pool_side.jpg') %>">
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="taiken">
-                            <div class="diving">
-                                <div>
-                                    <h2 class="main-title tween-animate-title">ダイビング初心者向け講習</h2>
-                                    <p class="sub-title tween-animate-title">お気に入りのダイビングスポットを見つけましょう</p>
-                                </div>
-                                <div class="diving__inner">
-                                    <div class="diving__item">
-                                        <div class="cover-slide hover-darken">
-                                            <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-1.jpg);"></div>
-                                        </div>
-                                        <p class="diving__title">子供スノーケリング教室 １</p>
-                                    </div>
-                                    <div class="diving__item">
-                                        <div class="cover-slide hover-darken">
-                                            <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-2.jpg);"></div>
-                                        </div>
-                                        <p class="diving__title">子供スノーケリング体験 ２</p>
-                                    </div>
-                                    <div class="diving__item">
-                                        <div class="cover-slide hover-darken">
-                                            <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-3.jpg);"></div>
-                                        </div>
-                                        <p class="diving__title">子供ダイビング体験 ３</p>
-                                    </div>
-                                    <div class="diving__item">
-                                        <div class="cover-slide hover-darken">
-                                            <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-4.jpg);"></div>
-                                        </div>
-                                        <p class="diving__title">７４歳ダイビング体験 ４</p>
-                                    </div>
-                                    <div class="diving__item">
-                                        <div class="cover-slide hover-darken">
-                                            <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-5.jpg);"></div>
-                                        </div>
-                                        <p class="diving__title">初心者向けダイビング体験 ５</p>
-                                    </div>
-                                    <div class="diving__item">
-                                        <div class="cover-slide hover-darken">
-                                            <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-6.jpg);"></div>
-                                        </div>
-                                        <p class="diving__title">初心者向けダイビング体験 ６</p>
-                                    </div>
-                                    <div class="diving__item">
-                                        <div class="cover-slide hover-darken">
-                                            <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-7.jpg);"></div>
-                                        </div>
-                                        <p class="diving__title">ダイビング体験 ７</p>
-                                    </div>
-                                    <div class="diving__item">
-                                        <div class="cover-slide hover-darken">
-                                            <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-8.jpg);"></div>
-                                        </div>
-                                        <p class="diving__title">ダイビング体験 ８</p>
-                                    </div>
-                                    <div class="diving__item">
-                                        <div class="cover-slide hover-darken">
-                                            <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-9.jpg);"></div>
-                                        </div>
-                                        <p class="diving__title">プール講習 ９</p>
-                                    </div>
-                                    <div class="diving__item">
-                                        <div class="cover-slide hover-darken">
-                                            <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-10.jpg);"></div>
-                                        </div>
-                                        <p class="diving__title">プール講習 １０</p>
-                                    </div>
-                                    <div class="diving__item">
-                                        <div class="cover-slide hover-darken">
-                                            <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-11.jpg);"></div>
-                                        </div>
-                                        <p class="diving__title">７０代夫婦でダイビング １１</p>
-                                    </div>
-                                    <div class="diving__item">
-                                        <div class="cover-slide hover-darken">
-                                            <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-12.jpg);"></div>
-                                        </div>
-                                        <p class="diving__title">７０代夫婦でダイビング １２</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="kousyu">
-                            <div class="training">
-                                <div class="kousyu__header">
-                                    <h2 class="main-title tween-animate-title">ダイビング講習へのお誘い</h2>
-                                    <p class="sub-title tween-animate-title">人気のダイビングスポットを見つけましょう</p>
-                                </div>
-                                <div class="training__inner">
-                                    <div class="main__title">
-                                        ダイビング講習案内
-                                    </div>
-                                    <p class="training__inner-p">
-                                        ダイビングを実施するにあたって、体験ダイビング以外は必ずダイビング講習を受けなければなりません。講習は民間の指導団体により実施しており終了合格後、Cカードと呼ばれる認定書が発行され一生涯ダイビングを楽しむことができます。近頃はダイビング指導団体により講習内容が違ってきており、ダイビング器材販売がメインになり、その使い方だけを教える簡単な講習などが増えてきています。シープルダイビングスクールでは講習のあり方として、一番重要で大切に行わなければいけないものとして考え実施しております。
-                                    </p>
-                                </div>
-                                <div class="training__inner">
-                                    <div class="main__title">
-                                        ダイビング講習期間
-                                    </div>
-                                    <p class="training__inner-p">
-                                        オープンウォーターダイバースクールは５日間です。最初の３日間は基礎講習、残り２日間でダイビングに対する自信と慣れを身に着け、最終テストを行い判定をします。個人レベルにより補講もあります。
-                                    </p>
-                                </div>
-                                <div class="training__inner">
-                                    <div class="main__title">
-                                        講習内容
-                                    </div>
-                                    <div class="main__title__inner">
-                                        <p class="training__inner-p">
-                                            実技講習・スキンダイビング（スノーケリング）講習から始まり、器材の使い方、水中での動作、水中でのトラブルの対処（可能な限り実際に行い,経験して対処する）等、学科講習では、人間生理学やダイビングのルール（事故を未然に防ぐ）を学び、学科テストも行います。点数により再テストもあります。
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="training__inner">
-                                    <div class="main__title">
-                                        ダイビング講習の意義
-                                    </div>
-                                    <div class="main__title__inner">
-                                        <p class="training__inner-p">
-                                            ダイビング講習とは、きちんとした講習を行い一人一人がルールを守ることにより、安全で安心できるダイビングを楽しめる手段であり、安易にしてはいけないものだと考えております。ランクアップをしない限り一生に一度のダイビング講習となります、本質を見極めてダイビング講習にご参加ください。<br>
-                                            ダイビングは年齢や泳力は一切関係ありません、健康な体であれば誰しもが楽しめるスポーツです。少しの勇気と努力で新しい世界が待っていることと思います。
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="training__inner">
-                                    <div class="main__title">
-                                        シープル&nbsp;ダイビング講習詳細
-                                    </div>
-                                    <div class="main__title__inner">
-                                        <p class="training__inner-p">
-                                            シープルダイビングスクールでは、器材の押し売りは一切行っておりません。人それぞれの考え方があり、また、ダイビングが合う合わないなど実際に行ってみないと分からない場合があります。自分の器材が欲しくなったとき当スクールでご購入していただければ幸いです。それまでは、全てレンタル器材をお勧めしております。
-                                        </p>
-                                    </div>
-                                    <div class="sub-title">
-                                        ダイビング講習期間
-                                    </div>
-                                    <div class="sub-title__inner">
-                                        <div class="koumoku">
-                                            基礎講習
-                                        </div>
-                                        <div class="sub-koumoku">
-                                            ３日間
-                                        </div>
-                                    </div>
-                                    <div class="sub-title__inner">
-                                        <div class="koumoku">
-                                            オープンウォーター講習
-                                        </div>
-                                        <div class="sub-koumoku">
-                                            ２日間
-                                        </div>
-                                    </div>
-                                    <div class="sub-title">
-                                        講習指導料金
-                                    </div>
-                                    <div class="sub-title__inner">
-                                        <div class="koumoku">
-                                            <!-- ５日間 -->
-                                        </div>
-                                        <div class="sub-koumoku center">
-                                            ¥６５,０００+その他
-                                        </div>
-                                    </div>
-                                    <div class="options">
-                                        その他料金（教材費、現地施設使用料、保険料、集合場所からの移動、タンク・ウェイト等レンタル料）
-                                    </div>
-                                    <div class="sub-title__inner">
-                                        <div class="koumoku">
-                                            ５日間
-                                        </div>
-                                        <div class="sub-koumoku">
-                                            ￥１６０,０００～
-                                        </div>
-                                    </div>
-                                    <div class="options">
-                                        全てレンタル器材で民宿、宿泊費込み<br>
-                                        *参加講習生の人数、学生などによる割引制度あり。
-                                    </div>
-                                    <div class="sub-title">
-                                        短期集中合宿コース
-                                    </div>
-                                    <div class="sub-title__inner">
-                                        <div class="koumoku">
-                                            ３泊４日
-                                        </div>
-                                        <div class="sub-koumoku">
-                                            ￥１３０,０００
-                                        </div>
-                                    </div>
-                                    <div class="options">
-                                        宿泊、レンタル料込み<br>
-                                        コースの内容料金に含まれないもの （現地での昼食、Ⅽカード申請料、補講講習料）
-                                    </div>
-                                    <div class="sub-title">
-                                        基礎コース（３日間）
-                                    </div>
-                                    <div class="sub-title__inner">
-                                        <div class="koumoku">
-                                            ２泊３日（合宿）
-                                        </div>
-                                        <div class="sub-koumoku">
-                                            ￥８０,０００
-                                        </div>
-                                    </div>
-                                    <div class="sub-title__inner">
-                                        <div class="koumoku">
-                                            １泊２日
-                                        </div>
-                                        <div class="sub-koumoku">
-                                            ￥９０,０００
-                                        </div>
-                                    </div>
-                                    <div class="div options">
-                                        （＋日帰り+学科６時間）
-                                    </div>
-                                    <div class="sub-title__inner">
-                                        <div class="koumoku">
-                                            日帰り３日間
-                                        </div>
-                                        <div class="sub-koumoku">
-                                            ￥９０,０００
-                                        </div>
-                                    </div>
-                                    <div class="options">
-                                        ＋学科６時間<br>
-                                        コースの内容料金に含まれないもの （現地での昼食、Ⅽカード申請料、補講講習料）
-                                    </div>
-                                    <div class="sub-title">
-                                        オープンウォーター講習コース（２日間）
-                                    </div>
-                                    <div class="sub-title__inner">
-                                        <div class="koumoku">
-                                            １泊２日
-                                        </div>
-                                        <div class="sub-koumoku">
-                                            ￥６０,０００
-                                        </div>
-                                    </div>
-                                    <div class="sub-title__inner">
-                                        <div class="koumoku">
-                                            日帰り２日間
-                                        </div>
-                                        <div class="sub-koumoku">
-                                            ￥６０,０００
-                                        </div>
-                                    </div>
-                                    <div class="options">
-                                        学科テスト ＋ 実技検定<br>
-                                        コースの内容料金に含まれないもの （二日間のレンタル器材料金、現地での昼食、Ⅽカード申請料、補講講習料）
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section id="tours">
-                            <div class="tour">
-                                <div class="tour__header">
-                                    <h2 class="main-title tween-animate-title">ダイビングツアーへのお誘い</h2>
-                                    <p class="sub-title tween-animate-title">人気のダイビングスポットを見つけましょう</p>
-                                </div>
-                                <div class="tour__inner">
-                                    <div class="tour__inner__title">
-                                        ダイビングツアー
-                                    </div>
-                                    <div class="tour__inner__p">
-                                        <p>
-                                           一年中を通してダイビングツアーを実施しており。当スクール企画のビックツアー（海外、離島）を除いてご希望にあわせて予定を組むことができます。
-                                           海外、離島などのビックツアーは年間３～４回ほど実施。通常ツアーとしては東伊豆（海洋公園、富戸）をメインにダイビングツアーを組んでいます。また、ダイビングだけではなくご希望に合わせて温泉や美味しい食べ物も一緒に堪能。６０歳代、７０歳代の方々も素晴らしい海の自然に感激していただいております。
-                                        </p>
-                                    </div>
-                                    <div class="tour__inner__p">
-                                        <p>
-                                            初めての方など指導団体は問いませんが、技量チェックをさせていただいております。お互い安心できることがダイビングには必要不可欠だと考えておりますので予めご了承ください。<br>ご参加人数は２名より通常料金で行いますが、１名でもご希望があれば実施いたします。
-                                            <strong>（プライベートツアーの場合、１日￥８,０００追加させていただいております。）</strong>また、ご希望にあわせてご自宅までお迎えにいくサービスもあります。
-                                        </p>
-                                    </div>
-                                    <div class="tour__inner__p">
-                                        <p>
-                                            皆様のご希望に添えるよう都会のオアシスをめざしており、海に行きたいと思ったときなど、前日予約もお受けいたします。（スタッフが空いていれば実施いたします。）　喫煙者でも大丈夫です。
-                                        </p>
-                                    </div>
-                                    <div class="tour__inner__title">
-                                        ダイビングツアー通常料金
-                                    </div>
-                                    <div class="tour__inner-list1">
-                                            <div class="list-name">日帰りツアー</div>
-                                            <div class="list-price">￥１９,８００</div>
-                                    </div>
-                                    <div class="tour__inner-list2">
-                                        <div class="list-name">１泊２日ツアー</div>
-                                        <div class="list-price">￥３９,５００</div>
-                                    </div>
-                                    <div class="tour__inner-option">
-                                        （レンタル器材、昼食代などは入っておりません。）
-                                    </div>
-                                    <div class="tour__inner__title">
-                                        体験ダイビング
-                                    </div>
-                                    <div class="tour__taiken-p">
-                                        昔話｛浦島太郎」の竜宮城へのお誘いです。年齢は一切関係ありません。泳げなくても大丈夫です。シープルダイビングスクールでは１人対１人のマンツーマンで実施しておりますので安心して体験していただいております。
-                                    </div>
-                                    <div class="tour__inner__title">
-                                        のんびりゆったりコース
-                                    </div>
-                                    <div class="tour__inner-list1">
-                                        <div class="list-name">
-                                            １泊２日
-                                        </div>
-                                        <div class="list-price">
-                                            ￥３９,５００
-                                        </div>
-                                    </div>
-                                    <div class="tour__inner-option">
-                                        (初日はプールなど足の立つところで安心確認。)
-                                    </div>
-                                    <div class="tour__inner-list2">
-                                        <div class="list-name">
-                                            日帰りコース
-                                        </div>
-                                        <div class="list-prie">
-                                            ￥１９,８００
-                                        </div>
-                                    </div>
-                                    <div class="tour__taiken-p">
-                                        <p>
-                                            体験ダイビングご参加の最年長の方は８５歳です。そのときは新聞にも載り、88歳までに3回ほど体験ダイビング（伊豆、沖縄）を楽しんでいただきました。
-                                            スノーケル講習、ツアーもご希望に合わせて実施いたします。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="office">
-                            <div class="main__office">
-                                <div class="office__header">
-                                    <h2 class="main-title tween-animate-title">シープルダイビングスクール事務所</h2>
-                                    <p class="sub-title tween-animate-title">気楽に遊びに来て下さい。</p>
-                                </div>
-                                <div class="main__office__inner">
-                                    <p class="main__office__inner-p">
-                                        シープルダイビングスクールでは、皆様の負担にならないよう店舗を事務所形式で南武線、中野島より徒歩２分という駅の近くのマンションの３階にて、午前１１時より１８時位まで営業いたしております。
-                                        気楽に遊びに来ていただけるように、常に考えておりツアービデオ上映やダイビングの話、時には一杯飲みながらひと時を過ごしていただいております。<br>
-                                        定休日はございませんが、ダイビングツアー、潜水調査等の仕事で留守にしている場合がありますのでご来所のときには、<strong>必ず事前にご連絡いただいておりますので予めご了承ください。</strong>
-                                        メールが確実にご連絡とれますので、よろしくお願いいたします。
-                                    </p>
-
-                                    <div class="instructor">
-                                        <div class="license">
-                                            <div class="instructor__title">
-                                                <strong>皆様のダイビングに責任をもちます。</strong>
-                                            </div>
-                                            <div class="issuing-member">
-                                                スクーバダイビング インターナショナル　Ｃ（終了認定書）カード発行団体
-                                            </div>
-                                            <div class="joining-group">
-                                                ＪＰ(日本職業潜水教師協会)、ＣＭＡＳ(世界水中連盟)
-                                            </div>
-                                            <p class="onetime-2get">
-                                                一度の講習で２種類のカードを取得することができます。
-                                            </p>
-                                            <div class="instructors-status">
-                                                指導者&nbsp;&&nbsp;ダイビング資格
-                                            </div>
-                                        </div>
-                                        <div class="profile">
-                                            <div class="profile__photo">
-                                                <img src="images/image.png" alt="" class="photo">
-
-                                                <span class="name">
-                                                    小森&nbsp;好祐
-                                                </span>
-                                            </div>
-                                            <div class="profile__group">
-                                                <div class="detail">
-                                                    <div class="instructors-status__title">
-                                                        ＪＰ（日本職業潜水教師協会）<br> ＣＭＡＳ（世界水中連盟）
-                                                    </div>
-                                                    <div class="instructors-status__title">
-                                                        国家資格 潜水士免許<br>潜水作業、潜水調査業務受託
-                                                    </div>
-                                                    <div class="instructors-status__title">
-                                                        ＮＰＯ法人ＢＳＮ<br>
-                                                        （バリアフリースポーツネットワーク）<br>
-                                                        日本スノーケリング連盟指導員
-                                                    </div>
-                                                    <div class="instructors-status__title">
-                                                        ライフガードライセンス<br> ワールドライフセービング<br> アドバンス
-                                                    </div>
+                                        <div class="message__texts appear left">
+                                            <div class="message__texts-inner">
+                                                <div class="message__title main-title item">
+                                                    <span class="blue shadow">１０歳からの大冒険<br>６０歳からの夢</span>
+                                                </div>
+                                                <div class="message__sub sub-title item">
+                                                    実現しましょう。
+                                                </div>
+                                                <div class="message__description item">
+                                                    <p>生命の源であり、人類の母なる海。</p>
+                                                    <p>この偉大なる大自然の海に､もっと親しみを持って身体と心で実感し、生命の素晴らしさを改めて感じてみませんか！</p>
+                                                    <p>老若男女とわず、アドベンチャーとリラクゼーションの新世界に飛びたちましょう。</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="address">
-                                            〒２１４－００１２<br>神奈川県川崎市多摩区<br>中野島６－２６－６－３０１<br>駐車場1台有
-                                            <div class="address_tellfax">
-                                                TEL:０４４－９２２－２２２０
-                                                <p><a href="mailto:info&#64;seaplediving@yahoo.co.jp">seaplediving@yahoo.co.jp</a></p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="taiken">
+                                <div class="diving">
+                                    <div>
+                                        <h2 class="main-title tween-animate-title">ダイビング初心者向け講習</h2>
+                                        <p class="sub-title tween-animate-title">お気に入りのダイビングスポットを見つけましょう</p>
+                                    </div>
+                                    <div class="diving__inner">
+                                        <div class="diving__item">
+                                            <div class="cover-slide hover-darken">
+                                                <img class="bg-img-zoom img-bg50" src="<%= require('./images/taiken-1.jpg') %>">
+                                                <!-- <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-1.jpg);"></div> -->
+                                            </div>
+                                            <p class="diving__title">子供スノーケリング教室 １</p>
+                                        </div>
+                                        <div class="diving__item">
+                                            <div class="cover-slide hover-darken">
+                                                <img class="bg-img-zoom img-bg50" src="<%= require('./images/taiken-2.jpg')%>">
+                                                <!-- <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-2.jpg);"></div> -->
+                                            </div>
+                                            <p class="diving__title">子供スノーケリング体験 ２</p>
+                                        </div>
+                                        <div class="diving__item">
+                                            <div class="cover-slide hover-darken">
+                                                <img class="bg-img-zoom img-bg50" src="<%= require('./images/taiken-3.jpg') %>">
+                                                <!-- <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-3.jpg);"></div> -->
+                                            </div>
+                                            <p class="diving__title">子供ダイビング体験 ３</p>
+                                        </div>
+                                        <div class="diving__item">
+                                            <div class="cover-slide hover-darken">
+                                                <img class="bg-img-zoom img-bg50" src="<%= require('./images/taiken-4.jpg') %>">
+                                                <!-- <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-4.jpg);"></div> -->
+                                            </div>
+                                            <p class="diving__title">７４歳ダイビング体験 ４</p>
+                                        </div>
+                                        <div class="diving__item">
+                                            <div class="cover-slide hover-darken">
+                                                <img class="bg-img-zoom img-bg50" src="<%= require('./images/taiken-5.jpg') %>">
+                                                <!-- <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-5.jpg);"></div> -->
+                                            </div>
+                                            <p class="diving__title">初心者向けダイビング体験 ５</p>
+                                        </div>
+                                        <div class="diving__item">
+                                            <div class="cover-slide hover-darken">
+                                                <img class="bg-img-zoom img-bg50" src="<%= require('./images/taiken-6.jpg') %>">
+                                                <!-- <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-6.jpg);"></div> -->
+                                            </div>
+                                            <p class="diving__title">初心者向けダイビング体験 ６</p>
+                                        </div>
+                                        <div class="diving__item">
+                                            <div class="cover-slide hover-darken">
+                                                <img class="bg-img-zoom img-bg50" src="<%= require('./images/taiken-7.jpg') %>">
+                                                <!-- <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-7.jpg);"></div> -->
+                                            </div>
+                                            <p class="diving__title">ダイビング体験 ７</p>
+                                        </div>
+                                        <div class="diving__item">
+                                            <div class="cover-slide hover-darken">
+                                                <img class="bg-img-zoom img-bg50" src="<%= require('./images/taiken-8.jpg') %>">
+                                                <!-- <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-8.jpg);"></div> -->
+                                            </div>
+                                            <p class="diving__title">ダイビング体験 ８</p>
+                                        </div>
+                                        <div class="diving__item">
+                                            <div class="cover-slide hover-darken">
+                                                <img class="bg-img-zoom img-bg50" src="<%= require('./images/taiken-9.jpg') %>">
+                                                <!-- <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-9.jpg);"></div> -->
+                                            </div>
+                                            <p class="diving__title">プール講習 ９</p>
+                                        </div>
+                                        <div class="diving__item">
+                                            <div class="cover-slide hover-darken">
+                                                <img class="bg-img-zoom img-bg50" src="<%= require('./images/taiken-10.jpg') %>">
+                                                <!-- <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-10.jpg);"></div> -->
+                                            </div>
+                                            <p class="diving__title">プール講習 １０</p>
+                                        </div>
+                                        <div class="diving__item">
+                                            <div class="cover-slide hover-darken">
+                                                <img class="bg-img-zoom img-bg50" src="<%= require('./images/taiken-11.jpg') %>">
+                                                <!-- <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-11.jpg);"></div> -->
+                                            </div>
+                                            <p class="diving__title">７０代夫婦でダイビング １１</p>
+                                        </div>
+                                        <div class="diving__item">
+                                            <div class="cover-slide hover-darken">
+                                                <img class="bg-img-zoom img-bg50" src="<%= require('./images/taiken-12.jpg') %>">
+                                                <!-- <div class="bg-img-zoom img-bg50" style="background-image: url(images/taiken-12.jpg);"></div> -->
+                                            </div>
+                                            <p class="diving__title">７０代夫婦でダイビング １２</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="kousyu">
+                                <div class="training">
+                                    <div class="kousyu__header">
+                                        <h2 class="main-title tween-animate-title">ダイビング講習へのお誘い</h2>
+                                        <p class="sub-title tween-animate-title">人気のダイビングスポットを見つけましょう</p>
+                                    </div>
+                                    <div class="training__inner">
+                                        <div class="main__title">
+                                            ダイビング講習案内
+                                        </div>
+                                        <p class="training__inner-p">
+                                            ダイビングを実施するにあたって、体験ダイビング以外は必ずダイビング講習を受けなければなりません。講習は民間の指導団体により実施しており終了合格後、Cカードと呼ばれる認定書が発行され一生涯ダイビングを楽しむことができます。近頃はダイビング指導団体により講習内容が違ってきており、ダイビング器材販売がメインになり、その使い方だけを教える簡単な講習などが増えてきています。シープルダイビングスクールでは講習のあり方として、一番重要で大切に行わなければいけないものとして考え実施しております。
+                                        </p>
+                                    </div>
+                                    <div class="training__inner">
+                                        <div class="main__title">
+                                            ダイビング講習期間
+                                        </div>
+                                        <p class="training__inner-p">
+                                            オープンウォーターダイバースクールは５日間です。最初の３日間は基礎講習、残り２日間でダイビングに対する自信と慣れを身に着け、最終テストを行い判定をします。個人レベルにより補講もあります。
+                                        </p>
+                                    </div>
+                                    <div class="training__inner">
+                                        <div class="main__title">
+                                            講習内容
+                                        </div>
+                                        <div class="main__title__inner">
+                                            <p class="training__inner-p">
+                                                実技講習・スキンダイビング（スノーケリング）講習から始まり、器材の使い方、水中での動作、水中でのトラブルの対処（可能な限り実際に行い,経験して対処する）等、学科講習では、人間生理学やダイビングのルール（事故を未然に防ぐ）を学び、学科テストも行います。点数により再テストもあります。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="training__inner">
+                                        <div class="main__title">
+                                            ダイビング講習の意義
+                                        </div>
+                                        <div class="main__title__inner">
+                                            <p class="training__inner-p">
+                                                ダイビング講習とは、きちんとした講習を行い一人一人がルールを守ることにより、安全で安心できるダイビングを楽しめる手段であり、安易にしてはいけないものだと考えております。ランクアップをしない限り一生に一度のダイビング講習となります、本質を見極めてダイビング講習にご参加ください。<br>
+                                                ダイビングは年齢や泳力は一切関係ありません、健康な体であれば誰しもが楽しめるスポーツです。少しの勇気と努力で新しい世界が待っていることと思います。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="training__inner">
+                                        <div class="main__title">
+                                            シープル&nbsp;ダイビング講習詳細
+                                        </div>
+                                        <div class="main__title__inner">
+                                            <p class="training__inner-p">
+                                                シープルダイビングスクールでは、器材の押し売りは一切行っておりません。人それぞれの考え方があり、また、ダイビングが合う合わないなど実際に行ってみないと分からない場合があります。自分の器材が欲しくなったとき当スクールでご購入していただければ幸いです。それまでは、全てレンタル器材をお勧めしております。
+                                            </p>
+                                        </div>
+                                        <div class="sub-title">
+                                            ダイビング講習期間
+                                        </div>
+                                        <div class="sub-title__inner">
+                                            <div class="koumoku">
+                                                基礎講習
+                                            </div>
+                                            <div class="sub-koumoku">
+                                                ３日間
+                                            </div>
+                                        </div>
+                                        <div class="sub-title__inner">
+                                            <div class="koumoku">
+                                                オープンウォーター講習
+                                            </div>
+                                            <div class="sub-koumoku">
+                                                ２日間
+                                            </div>
+                                        </div>
+                                        <div class="sub-title">
+                                            講習指導料金
+                                        </div>
+                                        <div class="sub-title__inner">
+                                            <div class="koumoku">
+                                                <!-- ５日間 -->
+                                            </div>
+                                            <div class="sub-koumoku center">
+                                                ¥６５,０００+その他
+                                            </div>
+                                        </div>
+                                        <div class="options">
+                                            その他料金（教材費、現地施設使用料、保険料、集合場所からの移動、タンク・ウェイト等レンタル料）
+                                        </div>
+                                        <div class="sub-title__inner">
+                                            <div class="koumoku">
+                                                ５日間
+                                            </div>
+                                            <div class="sub-koumoku">
+                                                ￥１６０,０００～
+                                            </div>
+                                        </div>
+                                        <div class="options">
+                                            全てレンタル器材で民宿、宿泊費込み<br>
+                                            *参加講習生の人数、学生などによる割引制度あり。
+                                        </div>
+                                        <div class="sub-title">
+                                            短期集中合宿コース
+                                        </div>
+                                        <div class="sub-title__inner">
+                                            <div class="koumoku">
+                                                ３泊４日
+                                            </div>
+                                            <div class="sub-koumoku">
+                                                ￥１３０,０００
+                                            </div>
+                                        </div>
+                                        <div class="options">
+                                            宿泊、レンタル料込み<br>
+                                            コースの内容料金に含まれないもの （現地での昼食、Ⅽカード申請料、補講講習料）
+                                        </div>
+                                        <div class="sub-title">
+                                            基礎コース（３日間）
+                                        </div>
+                                        <div class="sub-title__inner">
+                                            <div class="koumoku">
+                                                ２泊３日（合宿）
+                                            </div>
+                                            <div class="sub-koumoku">
+                                                ￥８０,０００
+                                            </div>
+                                        </div>
+                                        <div class="sub-title__inner">
+                                            <div class="koumoku">
+                                                １泊２日
+                                            </div>
+                                            <div class="sub-koumoku">
+                                                ￥９０,０００
+                                            </div>
+                                        </div>
+                                        <div class="div options">
+                                            （＋日帰り+学科６時間）
+                                        </div>
+                                        <div class="sub-title__inner">
+                                            <div class="koumoku">
+                                                日帰り３日間
+                                            </div>
+                                            <div class="sub-koumoku">
+                                                ￥９０,０００
+                                            </div>
+                                        </div>
+                                        <div class="options">
+                                            ＋学科６時間<br>
+                                            コースの内容料金に含まれないもの （現地での昼食、Ⅽカード申請料、補講講習料）
+                                        </div>
+                                        <div class="sub-title">
+                                            オープンウォーター講習コース（２日間）
+                                        </div>
+                                        <div class="sub-title__inner">
+                                            <div class="koumoku">
+                                                １泊２日
+                                            </div>
+                                            <div class="sub-koumoku">
+                                                ￥６０,０００
+                                            </div>
+                                        </div>
+                                        <div class="sub-title__inner">
+                                            <div class="koumoku">
+                                                日帰り２日間
+                                            </div>
+                                            <div class="sub-koumoku">
+                                                ￥６０,０００
+                                            </div>
+                                        </div>
+                                        <div class="options">
+                                            学科テスト ＋ 実技検定<br>
+                                            コースの内容料金に含まれないもの （二日間のレンタル器材料金、現地での昼食、Ⅽカード申請料、補講講習料）
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="tours">
+                                <div class="tour">
+                                    <div class="tour__header">
+                                        <h2 class="main-title tween-animate-title">ダイビングツアーへのお誘い</h2>
+                                        <p class="sub-title tween-animate-title">人気のダイビングスポットを見つけましょう</p>
+                                    </div>
+                                    <div class="tour__inner">
+                                        <div class="tour__inner__title">
+                                            ダイビングツアー
+                                        </div>
+                                        <div class="tour__inner__p">
+                                            <p>
+                                            一年中を通してダイビングツアーを実施しており。当スクール企画のビックツアー（海外、離島）を除いてご希望にあわせて予定を組むことができます。
+                                            海外、離島などのビックツアーは年間３～４回ほど実施。通常ツアーとしては東伊豆（海洋公園、富戸）をメインにダイビングツアーを組んでいます。また、ダイビングだけではなくご希望に合わせて温泉や美味しい食べ物も一緒に堪能。６０歳代、７０歳代の方々も素晴らしい海の自然に感激していただいております。
+                                            </p>
+                                        </div>
+                                        <div class="tour__inner__p">
+                                            <p>
+                                                初めての方など指導団体は問いませんが、技量チェックをさせていただいております。お互い安心できることがダイビングには必要不可欠だと考えておりますので予めご了承ください。<br>ご参加人数は２名より通常料金で行いますが、１名でもご希望があれば実施いたします。
+                                                <strong>（プライベートツアーの場合、１日￥８,０００追加させていただいております。）</strong>また、ご希望にあわせてご自宅までお迎えにいくサービスもあります。
+                                            </p>
+                                        </div>
+                                        <div class="tour__inner__p">
+                                            <p>
+                                                皆様のご希望に添えるよう都会のオアシスをめざしており、海に行きたいと思ったときなど、前日予約もお受けいたします。（スタッフが空いていれば実施いたします。）　喫煙者でも大丈夫です。
+                                            </p>
+                                        </div>
+                                        <div class="tour__inner__title">
+                                            ダイビングツアー通常料金
+                                        </div>
+                                        <div class="tour__inner-list1">
+                                                <div class="list-name">日帰りツアー</div>
+                                                <div class="list-price">￥１９,８００</div>
+                                        </div>
+                                        <div class="tour__inner-list2">
+                                            <div class="list-name">１泊２日ツアー</div>
+                                            <div class="list-price">￥３９,５００</div>
+                                        </div>
+                                        <div class="tour__inner-option">
+                                            （レンタル器材、昼食代などは入っておりません。）
+                                        </div>
+                                        <div class="tour__inner__title">
+                                            体験ダイビング
+                                        </div>
+                                        <div class="tour__taiken-p">
+                                            昔話｛浦島太郎」の竜宮城へのお誘いです。年齢は一切関係ありません。泳げなくても大丈夫です。シープルダイビングスクールでは１人対１人のマンツーマンで実施しておりますので安心して体験していただいております。
+                                        </div>
+                                        <div class="tour__inner__title">
+                                            のんびりゆったりコース
+                                        </div>
+                                        <div class="tour__inner-list1">
+                                            <div class="list-name">
+                                                １泊２日
+                                            </div>
+                                            <div class="list-price">
+                                                ￥３９,５００
+                                            </div>
+                                        </div>
+                                        <div class="tour__inner-option">
+                                            (初日はプールなど足の立つところで安心確認。)
+                                        </div>
+                                        <div class="tour__inner-list2">
+                                            <div class="list-name">
+                                                日帰りコース
+                                            </div>
+                                            <div class="list-prie">
+                                                ￥１９,８００
+                                            </div>
+                                        </div>
+                                        <div class="tour__taiken-p">
+                                            <p>
+                                                体験ダイビングご参加の最年長の方は８５歳です。そのときは新聞にも載り、88歳までに3回ほど体験ダイビング（伊豆、沖縄）を楽しんでいただきました。
+                                                スノーケル講習、ツアーもご希望に合わせて実施いたします。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="office">
+                                <div class="main__office">
+                                    <div class="office__header">
+                                        <h2 class="main-title tween-animate-title">シープルダイビングスクール事務所</h2>
+                                        <p class="sub-title tween-animate-title">気楽に遊びに来て下さい。</p>
+                                    </div>
+                                    <div class="main__office__inner">
+                                        <p class="main__office__inner-p">
+                                            シープルダイビングスクールでは、皆様の負担にならないよう店舗を事務所形式で南武線、中野島より徒歩２分という駅の近くのマンションの３階にて、午前１１時より１８時位まで営業いたしております。
+                                            気楽に遊びに来ていただけるように、常に考えておりツアービデオ上映やダイビングの話、時には一杯飲みながらひと時を過ごしていただいております。<br>
+                                            定休日はございませんが、ダイビングツアー、潜水調査等の仕事で留守にしている場合がありますのでご来所のときには、<strong>必ず事前にご連絡いただいておりますので予めご了承ください。</strong>
+                                            メールが確実にご連絡とれますので、よろしくお願いいたします。
+                                        </p>
+
+                                        <div class="instructor">
+                                            <div class="license">
+                                                <div class="instructor__title">
+                                                    <strong>皆様のダイビングに責任をもちます。</strong>
+                                                </div>
+                                                <div class="issuing-member">
+                                                    スクーバダイビング インターナショナル　Ｃ（終了認定書）カード発行団体
+                                                </div>
+                                                <div class="joining-group">
+                                                    ＪＰ(日本職業潜水教師協会)、ＣＭＡＳ(世界水中連盟)
+                                                </div>
+                                                <p class="onetime-2get">
+                                                    一度の講習で２種類のカードを取得することができます。
+                                                </p>
+                                                <div class="instructors-status">
+                                                    指導者&nbsp;&&nbsp;ダイビング資格
+                                                </div>
+                                            </div>
+                                            <div class="profile">
+                                                <div class="profile__photo">
+                                                    <img src="<%= require('./images/yoshihiro.png') %>" alt="" class="photo">
+
+                                                    <span class="name">
+                                                        小森&nbsp;好祐
+                                                    </span>
+                                                </div>
+                                                <div class="profile__group">
+                                                    <div class="detail">
+                                                        <div class="instructors-status__title">
+                                                            ＪＰ（日本職業潜水教師協会）<br> ＣＭＡＳ（世界水中連盟）
+                                                        </div>
+                                                        <div class="instructors-status__title">
+                                                            国家資格 潜水士免許<br>潜水作業、潜水調査業務受託
+                                                        </div>
+                                                        <div class="instructors-status__title">
+                                                            ＮＰＯ法人ＢＳＮ<br>
+                                                            （バリアフリースポーツネットワーク）<br>
+                                                            日本スノーケリング連盟指導員
+                                                        </div>
+                                                        <div class="instructors-status__title">
+                                                            ライフガードライセンス<br> ワールドライフセービング<br> アドバンス
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="address">
+                                                〒２１４－００１２<br>神奈川県川崎市多摩区<br>中野島６－２６－６－３０１<br>駐車場1台有
+                                                <div class="address_tellfax">
+                                                    TEL:０４４－９２２－２２２０
+                                                    <p><a href="mailto:info&#64;seaplediving@yahoo.co.jp">seaplediving@yahoo.co.jp</a></p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </section>
-                    </main>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+                <div class="footer appear up">
+                    <div class="footer__copyright item">
+                        &copy;Seaple&nbsp;Diving&nbsp;School
+                    </div>
                 </div>
             </div>
-            <div class="footer appear up">
-                <div class="footer__copyright item">
-                    &copy;Seaple&nbsp;Diving&nbsp;School
+            <nav class="mobile-menu">
+                <div class="m-logo">
+                    <div class="m-logo__inner">
+                        <img class="img" src="images/logo.svg">
+                        <span class="name">シープル</span>
+                    </div>
+                    <div class="m-logo__base">
+                        <span class="school">ダイビング&nbsp;スクール</span>
+                    </div>
                 </div>
-            </div>
+                <ul class="mobile-menu__main">
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#concept">
+                            <span class="main-title">コンセプト</span>
+                            <!-- <span class="sub-title">コンセプトについて</span> -->
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#taiken">
+                            <span class="main-title">体験ダイビング</span>
+                            <!-- <span class="sub-title">コンセプトについて</span> -->
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#kousyu">
+                            <span class="main-title">スクール</span>
+                            <!-- <span class="sub-title">スクールたちについて</span> -->
+                        </a>
+                    </li>
+
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#tours">
+                            <span class="main-title">ツアーへお誘い</span>
+                            <!-- <span class="sub-title">私たちについて</span> -->
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#office">
+                            <span class="main-title">コンタクト</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#top">
+                            <span class="main-title">トップ</span>
+                            <!-- <span class="sub-title">私たちについて</span> -->
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="mobile-menu">
-            <div class="m-logo">
-                <div class="m-logo__inner">
-                    <img class="img" src="images/logo.svg">
-                    <span class="name">シープル</span>
-                </div>
-                <div class="m-logo__base">
-                    <span class="school">ダイビング&nbsp;スクール</span>
-                </div>
-            </div>
-            <ul class="mobile-menu__main">
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#concept">
-                        <span class="main-title">コンセプト</span>
-                        <!-- <span class="sub-title">コンセプトについて</span> -->
-                    </a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#taiken">
-                        <span class="main-title">体験ダイビング</span>
-                        <!-- <span class="sub-title">コンセプトについて</span> -->
-                    </a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#kousyu">
-                        <span class="main-title">スクール</span>
-                        <!-- <span class="sub-title">スクールたちについて</span> -->
-                    </a>
-                </li>
-
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#tours">
-                        <span class="main-title">ツアーへお誘い</span>
-                        <!-- <span class="sub-title">私たちについて</span> -->
-                    </a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#office">
-                        <span class="main-title">コンタクト</span>
-                    </a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__link" href="#top">
-                        <span class="main-title">トップ</span>
-                        <!-- <span class="sub-title">私たちについて</span> -->
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-</body>
+        <script src="scripts/vendors/gsap.min.js" defer></script>
+        <script src="scripts/vendors/swiper-bundle.min.js" defer></script>
+        <script src="scripts/libs/hero-slider.js" defer></script>
+        <script src="scripts/vendors/scroll-polyfill.js" defer></script>
+        <script src="scripts/libs/scroll.js" defer></script>
+        <script src="scripts/libs/mobile-menu.js" defer></script>
+        <script src="scripts/libs/text-animation.js" defer></script>
+        <script src="scripts/main.js" defer></script>
+    </body>
 
 </html>

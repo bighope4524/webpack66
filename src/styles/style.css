@@ -521,11 +521,15 @@
 }
 
 .bg-img-zoom {
-  background-image: url(images/image-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
   width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .bg-img-zoom {
+    height: 250px;
+  }
 }
 
 .img-bg50 {

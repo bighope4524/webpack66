@@ -193,8 +193,10 @@ main {
 }
 
 .diving {
-    padding-top: $navHeight (+ 60px);
-    margin-top: $minusNavHeight (- 60px);
+    padding-top: $navHeight + 60px;
+    margin-top: $minusNavHeight - 60px;
+    // padding-top: $navHeight;
+    //     margin-top: $minusNavHeight;
     @include mq(xl) {
         padding-top: $navHeight;
         margin-top: $minusNavHeight;
@@ -225,8 +227,8 @@ main {
 }
 
 .training {
-    padding-top: $navHeight (+ 60px);
-    margin-top: $minusNavHeight (- 60px);
+    padding-top: $navHeight + 60px;
+    margin-top: $minusNavHeight - 60px;
     @include mq(xl) {
         padding-top: $navHeight;
         margin-top: $minusNavHeight;
@@ -336,8 +338,8 @@ main {
 }
 
 .tour {
-    padding-top: $navHeight (+ 60px);
-    margin-top: $minusNavHeight (- 60px);
+    padding-top: $navHeight + 60px;
+    margin-top: $minusNavHeight - 60px;
     @include mq(xl) {
         padding-top: $navHeight;
         margin-top: $minusNavHeight;
@@ -458,8 +460,8 @@ main {
 }
 
 .main__office {
-    padding-top: $navHeight (+ 60px);
-    margin-top: $minusNavHeight (- 60px);
+    padding-top: $navHeight + 60px;
+    margin-top: $minusNavHeight - 60px;
 
     @include mq(xl) {
         padding-top: $navHeight;

@@ -109,10 +109,15 @@
 }
 
 .bg-img-zoom {
-  background-image: url(images/image-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  // background-image: url(images/image-1.jpg);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  object-fit: cover;
+  height: 200px;
+  @include mq(md) {
+    height: 250px;
+  }
   width: 100%;
   @extend .img-zoom;
 }
